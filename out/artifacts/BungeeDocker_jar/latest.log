@@ -1,0 +1,80 @@
+[01:53:10] [main/INFO]: [SpigotLoggerForBungee] Hello, new logger!
+[01:53:10] [main/INFO]: Loaded plugin SpigotLoggerForBungee version 1.0.1-SNAPSHOT by lokha
+[01:53:10] [main/INFO]: Loaded plugin DeniableBungeecord version 1.0 by Asylx
+[01:53:10] [main/WARN]: Forced host server pvp is not defined
+[01:53:10] [main/INFO]: Enabled plugin reconnect_yaml version git:reconnect_yaml:1.16-R0.5-SNAPSHOT:9f6a798:1543 by SpigotMC
+[01:53:11] [main/INFO]:         __    
+[01:53:11] [main/INFO]:   |    |__)   LuckPerms v5.2.118
+[01:53:11] [main/INFO]:   |___ |      Running on BungeeCord - BungeeCord
+[01:53:11] [main/INFO]: 
+[01:53:11] [main/INFO]: [LuckPerms] Loading configuration...
+[01:53:11] [main/INFO]: [LuckPerms] Loading storage provider... [MONGODB]
+[01:53:12] [main/WARN]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+[01:53:12] [main/WARN]: SLF4J: Defaulting to no-operation (NOP) logger implementation
+[01:53:12] [main/WARN]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[01:53:12] [main/INFO]: [LuckPerms] Loading internal permission managers...
+[01:53:13] [main/INFO]: [LuckPerms] Performing initial data load...
+[01:53:14] [main/INFO]: [LuckPerms] Successfully enabled. (took 3617ms)
+[01:53:14] [main/INFO]: Enabled plugin LuckPerms version 5.2.118 by Luck
+[01:53:14] [main/INFO]: Enabled plugin cmd_find version git:cmd_find:1.16-R0.5-SNAPSHOT:9f6a798:1543 by SpigotMC
+[01:53:14] [main/INFO]: Database CONNECTED.
+[01:53:14] [main/INFO]: Enabled plugin Docker version 1.0 by Asylx
+[01:53:14] [main/INFO]: Enabled plugin cmd_server version git:cmd_server:1.16-R0.5-SNAPSHOT:9f6a798:1543 by SpigotMC
+[01:53:14] [main/INFO]: [BuycraftX] Validating your server key...
+[01:53:15] [main/INFO]: Enabled plugin BuycraftX version 12.0.6 by Buycraft
+[01:53:15] [main/INFO]: Enabled plugin cmd_alert version git:cmd_alert:1.16-R0.5-SNAPSHOT:9f6a798:1543 by SpigotMC
+[01:53:15] [main/INFO]: Enabled plugin cmd_send version git:cmd_send:1.16-R0.5-SNAPSHOT:9f6a798:1543 by SpigotMC
+[01:53:15] [main/INFO]: Enabled plugin cmd_list version git:cmd_list:1.16-R0.5-SNAPSHOT:9f6a798:1543 by SpigotMC
+[01:53:15] [main/INFO]: Enabled plugin SpigotLoggerForBungee version 1.0.1-SNAPSHOT by lokha
+[01:53:15] [main/INFO]: [DeniableBungeecord] DENIABLE PLUGIN LOADED!
+[01:53:15] [main/INFO]: Database CONNECTED.
+[01:53:15] [main/INFO]: Database CONNECTED.
+[01:53:15] [main/INFO]: Enabled plugin DeniableBungeecord version 1.0 by Asylx
+[01:53:15] [Netty IO Thread #0/INFO]: Listening on /0.0.0.0:25565
+[01:53:16] [BuycraftX Pool Thread #0/INFO]: [BuycraftX] Fetching all due players...
+[01:53:16] [BuycraftX Pool Thread #0/INFO]: [BuycraftX] Fetched due players (0 found).
+[01:53:16] [Netty IO Thread #1/INFO]: [/86.184.234.159:53215] <-> InitialHandler has connected
+[01:53:17] [Netty IO Thread #1/WARN]: Event PostLoginEvent(player=Asylx) took 392ms to process!
+[01:53:17] [Netty IO Thread #1/INFO]: [Asylx] <-> ServerConnector [Lobby] has connected
+[01:53:38] [Netty IO Thread #1/WARN]: Error in dispatching command
+java.lang.NullPointerException: null
+	at me.Asylx.Commands.Start.execute(Start.java:27) ~[BungeeDocker.jar:?]
+	at net.md_5.bungee.api.plugin.PluginManager.dispatchCommand(PluginManager.java:192) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at net.md_5.bungee.api.plugin.PluginManager.dispatchCommand(PluginManager.java:142) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at net.md_5.bungee.connection.UpstreamBridge.handle(UpstreamBridge.java:154) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at net.md_5.bungee.protocol.packet.Chat.handle(Chat.java:71) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at net.md_5.bungee.netty.HandlerBoss.channelRead(HandlerBoss.java:105) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:795) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:475) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [bungeecord.jar:git:BungeeCord-Bootstrap:1.16-R0.5-SNAPSHOT:9f6a798:1543]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]

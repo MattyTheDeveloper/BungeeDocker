@@ -1,0 +1,14 @@
+name: Docker
+author: Asylx
+version: 1.0
+main: me.Asylx.BungeeDocker
+
+commands:
+  create:
+    description: test
+  container:
+    description: container
+  start:
+    description: start
+  remove:
+    description: remove
