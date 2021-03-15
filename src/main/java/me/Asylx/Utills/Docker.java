@@ -52,6 +52,11 @@ public class Docker {
         return containers;
     }
 
+    public static List images() {
+        List<Image> images = dockerClient.listImagesCmd().exec();
+        return images;
+    }
+
     public static void stopContainer(String id) {
         dockerClient.stopContainerCmd(id).exec();
     }

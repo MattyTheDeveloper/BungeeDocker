@@ -60,14 +60,10 @@ public class DockerStorage {
         mongoCollection.insertOne(data);
     }
 
-    public static void addImageData(String ID, String Amount) {
-        Document data = new Document();
+    public static void deleteDocument(String ID) {
+        Document data = (Document) mongoCollection.find(new Document("ID", ID)).first();
 
-        data.append("ID", ID);
-        data.append("TYPE", "IMAGE");
-        data.append("Name", Amount);
-
-        mongoCollection.insertOne(data);
+        data.remove(data);
     }
 
 }

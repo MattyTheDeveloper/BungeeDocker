@@ -5,6 +5,7 @@ import com.github.dockerjava.api.command.CreateContainerResponse;
 import com.github.dockerjava.api.model.Image;
 import com.github.dockerjava.core.DockerClientBuilder;
 import me.Asylx.Utills.Docker;
+import me.Asylx.Utills.DockerStorage;
 import me.Asylx.Utills.Utils;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.ProxyServer;
@@ -27,11 +28,15 @@ public class Create extends Command {
         if (p.hasPermission("Deniable.Admin.Manage")) {
             if (args.length == 3) { // create LOBBY 1 25565
                 if (args[0].equalsIgnoreCase("lobby".toLowerCase())) {
-                    Utils.send(p, "&eCreating construction of Lobby.");
-                    int port = Integer.parseInt(args[2]);
+                    if (DockerStorage.getData(args[1]) == null) {
+                        Utils.send(p, "&eCreating construction of Lobby.");
+                        int port = Integer.parseInt(args[2]);
 
-                    Docker.createContainter(args[1], "lobby", port);
-                    Utils.send(p, "&eReconstruction successfully created.");
+                        Docker.createContainter(args[1].toLowerCase(), "lobby", port);
+                        Utils.send(p, "&eReconstruction successfully created.");
+                    } else {
+                        Utils.send(p, "&eServer already running!");
+                    }
                 }
             } else {
                 Utils.send(p, "&cIncorrect Usage: /create (type) (name) (port)");

@@ -22,7 +22,7 @@ public class Start extends Command {
 
         if (p.hasPermission("Deniable.Admin.Manage")) {
             if (args.length == 1) { // create LOBBY 1 25565
-                Utils.send(p, "&eStarting Container");
+                Utils.send(p, "&eThe requested server has been started.");
 
                 String id = DockerStorage.getData(args[0]).getString("ID");
                 int port = DockerStorage.getData(args[0]).getInteger("Port");

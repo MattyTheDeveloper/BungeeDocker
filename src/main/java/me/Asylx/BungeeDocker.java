@@ -1,9 +1,7 @@
 package me.Asylx;
 
-import me.Asylx.Commands.Container;
-import me.Asylx.Commands.Create;
-import me.Asylx.Commands.Remove;
-import me.Asylx.Commands.Start;
+import me.Asylx.Commands.*;
+import me.Asylx.Player.Join;
 import me.Asylx.Utills.DockerStorage;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.plugin.Command;
@@ -38,6 +36,9 @@ public class BungeeDocker extends Plugin {
         getProxy().getPluginManager().registerCommand(this, new Start());
         getProxy().getPluginManager().registerCommand(this, new Container());
         getProxy().getPluginManager().registerCommand(this, new Remove());
+        getProxy().getPluginManager().registerCommand(this, new Hub()); // /MESSAGE
+
+        getProxy().getPluginManager().registerListener(this, new Join());
     }
 
 

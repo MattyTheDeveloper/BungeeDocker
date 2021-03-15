@@ -12,3 +12,5 @@ commands:
     description: start
   remove:
     description: remove
+  hub:
+    description: hub
